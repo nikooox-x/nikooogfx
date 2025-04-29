@@ -3,9 +3,11 @@ import React, { useState, useEffect } from 'react';
 const rotatingWords = [
   "GFX Artist",
   "Designer",
-  "Creator",
+  "Restart",
   "Visionary",
-  "3D Specialist"
+  "Dumbass",
+  "Creator",
+  "Editor",
 ];
 
 const AboutPage: React.FC = () => {
@@ -48,9 +50,9 @@ const AboutPage: React.FC = () => {
             </div>
             <p className="text-lg mb-6">
               I am a passionate and experienced Roblox graphics artist with a strong background in creating
-              visually appealing and engaging designs for games, assets, and branding. Skilled in using tools
+              visually appealing designs for games, assets, and branding. Skilled in using tools
               like Photoshop, Blender, and Roblox Studio, I bring creative concepts to life through high-quality
-              icons, thumbnails, gamepasses, and UI elements.
+              icons, thumbnails and UI elements.
             </p>
             <p className="text-lg">
               With a deep understanding of the Roblox platform and its community, I tailor my designs to enhance

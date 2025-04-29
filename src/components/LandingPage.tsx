@@ -6,25 +6,29 @@ const LandingPage: React.FC = () => {
 
   return (
     <div className="relative h-screen w-full overflow-hidden">
-      {/* Hero Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ 
-          backgroundImage: "url('https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')",
-          filter: "brightness(0.5) contrast(1.2)"
+      {/* Hero Video */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover"
+        autoPlay
+        muted
+        loop
+        playsInline
+        style={{
+          filter: "brightness(1) contrast(1.2)"
         }}
       >
-        {/* Blue overlay for brand color */}
-        <div className="absolute inset-0 bg-[#0012ff] opacity-20"></div>
-      </div>
+        <source src="https://i.imgur.com/xCX8lLQ.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      {/* Blue overlay for brand color */}
+      <div className="absolute inset-0 bg-[#0012ff] opacity-10"></div>
       
       {/* Content Container */}
       <div className="relative h-full w-full">
         {/* Logo */}
-        <div className="absolute top-10 left-0 right-0 text-center">
+        <div className="absolute top-0 left-0 right-0 text-center">
           <h1 className="text-6xl font-extrabold text-white tracking-wider">
-            <span className="text-[#0012ff]">nikoo</span>
-            <span className="text-white">gfx</span>
           </h1>
         </div>
         

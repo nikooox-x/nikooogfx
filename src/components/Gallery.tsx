@@ -28,10 +28,11 @@ const Gallery: React.FC = () => {
   const column1Ref = useRef<HTMLDivElement>(null);
   const column2Ref = useRef<HTMLDivElement>(null);
   const column3Ref = useRef<HTMLDivElement>(null);
+  const column4Ref = useRef<HTMLDivElement>(null);
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
 
   useEffect(() => {
-    const columns = [column1Ref.current, column2Ref.current, column3Ref.current];
+    const columns = [column1Ref.current, column2Ref.current, column3Ref.current, column4Ref.current];
     
     const createColumn = (images: GalleryImage[]) => {
       const column = document.createElement('div');
@@ -89,7 +90,7 @@ const Gallery: React.FC = () => {
         const columnContent = createColumn(shuffledImages);
         column.appendChild(columnContent);
         
-        const speed = 1 + index * 0.5;
+        const speed = 5 + index * 0.5;
         animateColumn(columnContent, speed);
       }
     });
@@ -104,10 +105,11 @@ const Gallery: React.FC = () => {
         Click on the images in order to view them full-screen.
       </h1>
       
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
         <div ref={column1Ref} className="h-[800px] overflow-hidden"></div>
         <div ref={column2Ref} className="h-[800px] overflow-hidden"></div>
         <div ref={column3Ref} className="h-[800px] overflow-hidden"></div>
+        <div ref={column4Ref} className="h-[800px] overflow-hidden"></div>
       </div>
 
       {selectedImage && (

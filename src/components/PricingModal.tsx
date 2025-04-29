@@ -32,7 +32,7 @@ const PricingModal: React.FC = () => {
             
             <div className="border-b border-[#0012ff]/30 pb-4">
               <h3 className="text-lg sm:text-xl font-bold mb-2">Standard GFX image</h3>
-              <p className="text-xl sm:text-2xl font-bold text-[#0012ff] mb-2">$25</p>
+              <p className="text-xl sm:text-2xl font-bold text-[#0012ff] mb-2">$10+</p>
               <ul className="text-left list-disc pl-6 space-y-1 text-sm sm:text-base">
                 <li>Detailed character render</li>
                 <li>Custom background</li>
@@ -43,14 +43,22 @@ const PricingModal: React.FC = () => {
             
             <div>
               <h3 className="text-lg sm:text-xl font-bold mb-2">Premium GFX Package</h3>
-              <p className="text-xl sm:text-2xl font-bold text-[#0012ff] mb-2">$40+</p>
+              <p className="text-xl sm:text-2xl font-bold text-[#0012ff] mb-2">$20+</p>
               <ul className="text-left list-disc pl-6 space-y-1 text-sm sm:text-base">
                 <li>Complex scene with multiple characters</li>
                 <li>Advanced lighting and effects</li>
                 <li>Highly detailed environment</li>
                 <li>3 revisions included</li>
-                <li>Delivery within 1-2 days</li>
-                <li>Source file included</li>
+                <li>Delivery within agreed date when requesting</li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+              <h3 className="text-lg sm:text-xl font-bold mb-2">Special request</h3>
+              <p className="text-xl sm:text-2xl font-bold text-[#0012ff] mb-2">?</p>
+              <ul className="text-left list-disc pl-6 space-y-1 text-sm sm:text-base">
+                <li>Contact me if any of the above won't match your wantings</li>
               </ul>
             </div>
           </div>
@@ -61,7 +69,6 @@ const PricingModal: React.FC = () => {
           </p>
         </div>
       </div>
-    </div>
   );
 };
 
