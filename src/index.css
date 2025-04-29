@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-blue: #0012ff;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: #000;
+  overflow-x: hidden;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-blue);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 18, 255, 0.8);
+}
+
+/* Hover effects for buttons */
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+/* Gallery styles */
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.gallery-column {
+  animation: scroll 20s linear infinite;
+}
+
+.gallery-column:hover {
+  animation-play-state: paused;
+}
+
+/* Smooth scrolling for page transitions */
+html {
+  scroll-behavior: smooth;
+}
